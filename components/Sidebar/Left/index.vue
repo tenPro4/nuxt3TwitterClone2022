@@ -21,7 +21,7 @@
 
             <SidebarLeftTab>
                 <template v-slot:icon>
-                    <HashtagIcon />
+                    <outHome />
                 </template>
                 <template v-slot:name>
                     Explore
@@ -134,7 +134,7 @@
 
 <script setup>
 import { HomeIcon } from "@heroicons/vue/solid"
-import { HashtagIcon, BellIcon, InboxIcon, BookmarkIcon, DocumentTextIcon, UserIcon, DotsCircleHorizontalIcon, PencilIcon, ChevronDownIcon } from "@heroicons/vue/outline"
+import { HashtagIcon, HomeIcon as outHome , BellIcon, InboxIcon, BookmarkIcon, DocumentTextIcon, UserIcon, DotsCircleHorizontalIcon, PencilIcon, ChevronDownIcon } from "@heroicons/vue/outline"
 
 const { defaultTransition } = useTailwindConfig()
 

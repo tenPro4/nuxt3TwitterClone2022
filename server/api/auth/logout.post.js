@@ -1,5 +1,5 @@
 import { removeRefreshToken } from "~~/server/db/refreshTokens"
-import { sendRefreshToken } from "~~/server/utils/jwt"
+import { setRefreshToken } from "~~/server/utils/jwt"
 
 export default defineEventHandler(async (event) => {
     try {
@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
         await removeRefreshToken(refreshToken)
     } catch (error) { }
 
-    sendRefreshToken(event, null)
+    setRefreshToken(event, null)
 
     return { message: 'Done' }
 })
